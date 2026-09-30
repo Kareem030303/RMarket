@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMarket | Your Online General Store</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://tailwindcss.com"></script>
+    <!-- Snipcart CSS & Google Fonts -->
+    <link rel="preconnect" href="https://snipcart.com">
+    <link rel="preconnect" href="https://snipcart.com">
+    <link rel="stylesheet" href="https://snipcart.com" />
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-extrabold tracking-tight text-blue-600">RMarket</h1>
+            
+            <!-- Cart Button -->
+            <button class="snipcart-checkout flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition font-semibold">
+                <span>🛒 View Cart</span>
+                <span class="snipcart-items-count bg-white text-blue-600 px-2 py-0.5 rounded-full text-sm font-bold">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-50 py-12 px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Your One-Stop Shop</h2>
+            <p class="text-lg text-gray-600">Get your everyday groceries, fresh apparel, and health essentials delivered right to your door.</p>
+        </div>
+    </section>
+
+    <!-- Main Storefront Grid -->
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <h3 class="text-2xl font-bold mb-8 text-gray-900 border-b pb-2">Featured Products</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- PRODUCT 1: Groceries -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 flex flex-col justify-between border border-gray-100">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-green-600 bg-green-50 px-2 py-1 rounded">Groceries</span>
+                    <h4 class="text-xl font-bold mt-3 text-gray-900">Organic Coffee Beans</h4>
+                    <p class="text-gray-500 mt-2 text-sm">Premium medium roast premium blend. Perfect for your morning energy boost.</p>
+                </div>
+                <div class="mt-6 flex items-center justify-between">
+                    <span class="text-2xl font-extrabold text-gray-900">$14.99</span>
+                    <!-- Snipcart Buy Button -->
+                    <button class="snipcart-add-item bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition font-medium text-sm"
+                        data-item-id="groceries-coffee-01"
+                        data-item-name="Organic Coffee Beans"
+                        data-item-price="14.99"
+                        data-item-url="/"
+                        data-item-description="Premium medium roast premium blend coffee beans.">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- PRODUCT 2: Clothes -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 flex flex-col justify-between border border-gray-100">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-purple-600 bg-purple-50 px-2 py-1 rounded">Clothes</span>
+                    <h4 class="text-xl font-bold mt-3 text-gray-900">RMarket Classic Hoodie</h4>
+                    <p class="text-gray-500 mt-2 text-sm">Ultra-soft cotton blend hoodie featuring the exclusive minimalist RMarket crest print.</p>
+                </div>
+                <div class="mt-6 flex items-center justify-between">
+                    <span class="text-2xl font-extrabold text-gray-900">$45.00</span>
+                    <!-- Snipcart Buy Button -->
+                    <button class="snipcart-add-item bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition font-medium text-sm"
+                        data-item-id="apparel-hoodie-01"
+                        data-item-name="RMarket Classic Hoodie"
+                        data-item-price="45.00"
+                        data-item-url="/"
+                        data-item-custom1-name="Size"
+                        data-item-custom1-options="Small|Medium|Large|X-Large"
+                        data-item-description="Ultra-soft cotton blend logo hoodie.">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- PRODUCT 3: Medicine -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 flex flex-col justify-between border border-gray-100">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-red-600 bg-red-50 px-2 py-1 rounded">Wellness</span>
+                    <h4 class="text-xl font-bold mt-3 text-gray-900">Daily Vitamin C Complex</h4>
+                    <p class="text-gray-500 mt-2 text-sm">Immune system support formula. Contains 90 dietary over-the-counter capsules.</p>
+                </div>
+                <div class="mt-6 flex items-center justify-between">
+                    <span class="text-2xl font-extrabold text-gray-900">$9.99</span>
+                    <!-- Snipcart Buy Button -->
+                    <button class="snipcart-add-item bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition font-medium text-sm"
+                        data-item-id="wellness-vitaminc-01"
+                        data-item-name="Daily Vitamin C Complex"
+                        data-item-price="9.99"
+                        data-item-url="/"
+                        data-item-description="Immune system support dietary supplement.">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 mt-12 text-center text-sm border-t border-gray-800">
+        <p>&copy; 2026 RMarket. All rights reserved.</p>
+    </footer>
+
+    <!-- Snipcart JavaScript SDK (Required for checkout functionality) -->
+    <script async src="https://snipcart.com"></script>
+    <div hidden id="snipcart" data-api-key="YOUR_SNIPCART_API_KEY_HERE" data-config-modal-style="side"></div>
+
+</body>
+</html>
